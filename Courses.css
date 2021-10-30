@@ -1,0 +1,173 @@
+*{
+    margin:0;
+    padding:0;
+    color:rgb(95, 13, 13);
+    font-family:"open-sans";
+    font-weight: bold;
+}
+.body{
+    background-image:url("../Media/allpagebg4.jpg");
+}
+/*  top header banner*/
+.team-header{
+    min-height:20vh;
+    width:100%;
+    background-image: url("../Media/pageheadertop\ \(2\).jpg");
+}
+.div-header{
+    text-align: center;
+    padding-top: 60px;
+    font-size: 40px;
+}
+.menu-bar{
+  font-size: 35px;
+  color:rgb(95, 13, 13);
+  text-align: left;
+  }
+/* Intro to Courses section */
+.explore-line {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    background: rgb(189, 207, 84);
+    padding:30px;
+   
+  }
+  .explore-line h2 {
+    font-size: 35px;
+    padding:10px;
+    color:rgb(99, 95, 89)
+
+  }
+  .explore-line p {
+    font-size: 20px;
+    padding: 10px;
+  }
+  .table-div h2{
+    padding: 50px;
+    color: rgb(8, 8, 8);
+  }
+  .table-row th{
+    font-size: 20px;
+    color: darkblue;
+  }
+
+  /* Courses Image Quiz Section */
+  html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  .column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+  }
+  
+  .text {
+    background-color: #6d6e09;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+  }
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .image {
+    opacity: 1;
+    display: block;
+
+    transition: .5s ease;
+    backface-visibility: hidden;
+
+  }
+  .container {
+    padding: 0 16px;
+  
+  }
+  .container-dyna{
+    position:relative;
+  }
+  .container-dyna:hover .image {
+  opacity: 0.3;
+}
+
+.container-dyna:hover .middle {
+  opacity: 1;
+}
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+ 
+  .title {
+    color: grey;
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background: rgb(206, 154, 10);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+  
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+
+  /* Time Table with zoom section*/
+  table {
+    font-family: arial, sans-serif;
+    border: 1px solid #0c0c0c;
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #d8b30e;
+  }
+
+/* Footer Section */
+  .footer{
+    width: 100%;
+    background: rgb(206, 154, 10);
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom:20px;
+    text-align: center; 
+  }

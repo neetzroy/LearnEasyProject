@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+
+<!ELEMENT Subject_Details(Subject)>
+
+<!ELEMENT Subject(subject_name,subject_teacher)
+    <!ELEMENT subject_name (#PCDATA)>
+    <!ELEMENT subject_teacher (#PCDATA)>
+    <!ELEMENT subject_days (#PCDATA)>
+     <!ELEMENT subject_timings (#PCDATA)>

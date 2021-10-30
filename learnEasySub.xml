@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--this xml document is transformed to XHTML using an external XSL-->
+<?xml-stylesheet type="text/xsl" href="../xml_docs/learnEasySub.xsl"?>
+
+<!DOCTYPE class SYSTEM "learnEasySub.dtd">
+
+<Subject_Details title="Subject Info">
+    <Subject id="C11">
+        <subject_name>CS Basics</subject_name>
+        <subject_teacher>John Ward</subject_teacher>
+        <subject_days>Tuesday</subject_days>
+        <subject_timings>10:00AM</subject_timings>
+    </Subject>
+
+     <Subject id="C12">
+        <subject_name>CS Coding</subject_name>
+        <subject_teacher>Mark Coles</subject_teacher>
+        <subject_days>Thursday,Friday</subject_days>
+        <subject_timings>11:00AM,3:00PM</subject_timings>
+    </Subject>
+
+     <Subject id="C13">
+        <subject_name>CS MS Office</subject_name>
+        <subject_teacher>Ann Ben</subject_teacher>
+        <subject_days>Monday,Wednesday</subject_days>
+        <subject_timings>2:00PM,9:00AM</subject_timings>
+    </Subject>
+</Subject_Details>

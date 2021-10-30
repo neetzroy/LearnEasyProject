@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Read XML Data Using jQuery Ajax and Load it in HTML table</title>
+    <!--Include Bootstrap CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <!--Include jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="../LearnEasy_Phase2/JQuery/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+
+    <p>
+      Click button to Read XML and Show it in HTML
+    </p>
+    <input type="button" value="Read XML" id="btn1" />
+    <table class="table table-condensed table-hovered table-striped">
+      <thead>
+        <tr>
+          <tr style="font-size:medium">Teacher Details</tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Department</th>
+          <th>Teaching Subject</th>
+          <th>Email Id</th>
+          <th>Phone Number</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody1">
+        
+      </tbody>
+    
+    </table>
+    <p>
+      Click button to Read XML and Show it in HTML
+    </p>
+    <input type="button" value="Read XML" id="btn2" />
+    <table class="table table-condensed table-hovered table-striped">
+      <thead>
+        <tr>
+          <tr style="font-size:medium">Subject Details</tr>
+          <th>Subject Name</th>
+          <th>Subject Teacher</th>
+          <th>Days Available</th>
+          <th>Timings</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody2">
+        
+      </tbody>
+    
+    </table>
+</body>
+
+<script>
+    $(document).ready(function() {
+        //jQuery on button click Call
+        $('#btn1').click(function () {
+        
+            $('#tableBody1').empty();       // Clear the table body.
+            //ajax call to load XML and parse it
+            $.ajax({
+                type: 'GET',
+                url: 'learnEasyTeach.xml',  
+                
+        // The file path.
+
+        dataType: 'xml',    
+                success: function(xml) {
+                   //find all book tags, loop them and append to table body
+                    $(xml).find('Teacher').each(function() {
+                        
+                        // Append new data to the tbody element.
+                        $('#tableBody1').append(
+                          '<tr>' +
+                                '<td>' +
+                                    $(this).find('firstName').text() + '</td> ' +
+                                '<td>' +
+                                    $(this).find('lastName').text() + '</td> ' +
+                                '<td>' +
+                                    $(this).find('department').text() + '</td> ' +
+                                    '<td>' +
+                                    $(this).find('teaching_subject').text() + '</td> ' +
+                                    '<td>' +
+                                    $(this).find('email').text() + '</td> ' +
+                                    '<td>' +
+                                    $(this).find('phoneNumber').text() + '</td> ' +
+                            '</tr>');
+                    });
+                }
+            });
+        });
+    });
+
+    $(document).ready(function() {
+        //jQuery on button click Call
+        $('#btn2').click(function () {
+        
+            $('#tableBody2').empty();       // Clear the table body.
+            //ajax call to load XML and parse it
+            $.ajax({
+                type: 'GET',
+                url: 'learnEasySub.xml',  
+                
+        // The file path.
+
+        dataType: 'xml',    
+                success: function(xml) {
+                   //find all book tags, loop them and append to table body
+                    $(xml).find('Subject').each(function() {
+                        
+                        // Append new data to the tbody element.
+                        $('#tableBody2').append(
+                          '<tr>' +
+                                '<td>' +
+                                    $(this).find('subject_name').text() + '</td> ' +
+                                '<td>' +
+                                    $(this).find('subject_teacher').text() + '</td> ' +
+                                '<td>' +
+                                    $(this).find('subject_days').text() + '</td> ' +
+                                '<td>' +
+                                  $(this).find('subject_timings').text() + '</td> ' +
+                                '<td>' +
+                          '</tr>');
+                    });
+                }
+            });
+        });
+    });
+    
+</script>
+</html>

@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+
+<!ELEMENT Teachers_Details(Teacher)>
+
+<!ELEMENT Teacher(firstName,lastName,department,teaching_subject,email,phoneNumber)>
+    <!ELEMENT firstName (#PCDATA)>
+    <!ELEMENT lastName (#PCDATA)>
+    <!ELEMENT department (#PCDATA)>
+    <!ELEMENT teaching_subject (#PCDATA)>
+    <!ELEMENT email (#PCDATA)>
+    <!ELEMENT phoneNumber (#PCDATA)>

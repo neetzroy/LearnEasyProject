@@ -1,0 +1,308 @@
+*{
+  margin:0;
+  padding:0;
+  color:rgb(95, 13, 13);
+  font-family:"open-sans";
+}
+.header{
+  min-height:70vh;
+  width:100%;
+  background-image:url("../Media/joanna-kosinska-1_CMoFsPfso-unsplash.jpg");
+  padding: 0px;
+  background-position: center;
+  background-size:cover;
+  position:relative;
+  overflow:hidden;
+}
+.menu-bar{
+font-size: 35px;
+color:rgb(95, 13, 13);
+}
+nav{
+  display:flex;
+  padding:2% 4%;
+  justify-content: space-between;
+  align-items:center;
+}
+nav img{
+  width: 135px;
+}
+.nav-links{
+  flex:1;
+  text-align:right;
+}
+.nav-links ul li{
+  list-style: none;
+  display:inline-block;
+  padding:8px 12px ; /*left up down right */ /* or w3  top, right, bottom, left*/
+
+  position:relative;
+}
+.nav-links ul li a{
+color:rgb(95, 13, 13);
+  text-decoration: none;  /*blue underline has taken off*/
+  font-size: 13px;  
+  font-size: 20px;
+}
+.nav-links ul li:after{  /*after being clicked*/
+  width:0%;
+  content: "";
+  height:2px;
+  background-color: #f5f82c;
+  display:block;
+  margin: auto;
+}
+.nav-links ul li:hover::after{
+  width:100%;
+}
+nav .fa{
+  display: none;
+}
+
+
+
+.dropdown-content a:hover {
+background-color: #ddd;
+}
+.dropdown {
+float: right;
+overflow: hidden;
+}
+.dropdown:hover .dropdown-content {
+display: block;
+}
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #faa913;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index:1;
+}
+.dropdown .dropbtn {
+border: none;
+outline: none;
+padding: 14px 16px;
+background-color: inherit;
+font-family: inherit;
+margin: 0;
+color:rgb(95, 13, 13);
+text-decoration: none;  /*blue underline has taken off*/ 
+font-size: 20px;
+}
+.dropdown-content a {
+float: none;
+color:rgb(95, 13, 13);
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+}
+
+
+.text-box{
+  width:100%;
+  color:rgb(192, 160, 30);
+  position:absolute;
+  top:40%;
+  bottom:20%;
+  text-align:center;
+  font-size: 40px;
+  padding-left: 85px;
+}
+.text-box h1{
+font-size: 60px;
+color:rgb(95, 13, 13);
+
+}
+.text-box p{
+  font-size: 40px;
+  margin:10px 0 30px;
+  color:rgb(95, 13, 13);
+  }
+
+
+
+.hero-btn {
+  display:inline-block;
+  text-decoration: none;
+  color:cornsilk;
+  border:1px solid cornsilk;
+  padding:8px 10px;
+  background: transparent;
+  cursor:pointer;
+  transition: 1s;
+  position: relative;
+
+}
+.hero-btn:hover{
+border:yellowgreen;
+background: rgb(241, 133, 9);
+}
+
+.index-about h1{
+padding-bottom:20px;
+font-size: 40px;
+color:rgb(95, 13, 13);
+}
+.index-about h2 {
+  font-size: 35px;
+  color:rgb(95, 13, 13);
+}
+.index-about h4 {
+  font-size: 10px;
+  color:rgb(95, 13, 13);
+}
+.index-about p {
+  font-size: 25px;
+  padding: 10px;
+  color:rgb(95, 13, 13);
+}
+
+.index-about {
+width: 88%;
+background: white;
+
+margin: auto;
+text-align: center;
+padding: 80px;
+padding-bottom:30px;
+
+}
+.container {
+display:flex;
+justify-content:space-between;
+margin-top: 2%;
+}
+
+
+#slideshow { 
+margin: 50px auto; 
+position: relative; 
+width: 100%; 
+height: 240px; 
+padding: 10px; 
+box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+background: #c0bdbc;
+}
+
+#slideshow > div { 
+position: absolute; 
+top: 10px; 
+left: 10px; 
+right: 10px; 
+bottom: 10px; 
+}
+.slider-quote h1{
+text-align: center;
+padding-top:100px;
+}
+.col1{
+
+  flex: basis 50%;
+  background: #c0bdbc;
+  border-radius:5%;
+  margin-bottom:10px;
+  margin-right: 25px;
+  padding:15px;
+  transition: 0.5s;
+  box-sizing: border-box;
+  font-size: 60px;
+  justify-content:space-between;
+
+}
+.col1 h4{
+  margin:10px;
+  font-weight: 60;
+  text-align:center;
+  font-size: 25px;
+}
+.col1:hover{
+  box-shadow: 0 0 10px 0 rgba(160, 76, 7, 0.938);
+}
+<!--testmonial-->
+.row1 {
+display:flex;
+justify-content:space-between;
+
+}
+.testimonial {
+width: 80%;
+margin: auto;
+text-align: center;
+padding-top: 100px;
+}
+
+.testimonial-col {
+flex-basis: 44%;
+border-radius: 20px;
+text-align: left;
+background: #c0bdbc;
+padding: 25px;
+display: flex;
+cursor: pointer;
+margin-bottom: 10px;
+}
+
+/* get img and style this section */
+#goto-testmons{
+  border-style: double;
+}
+.testimonial-col img {
+height: 60px;
+width: 60px;
+margin-left: 5px;
+margin-right: 30px;
+border-radius: 50%;
+}
+
+.testimonial-col p {
+padding: 0;
+}
+
+.testimonial-col h3 {
+text-align: left;
+margin-top: 15px;
+
+}
+
+.testimonial-col .fa {
+color: #2aa80a;
+
+}
+
+
+.icons .fa{
+  color:blue;
+  margin:0 13px;
+  cursor: pointer;
+  padding:18px 0;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+#myBtn:hover {
+  background-color: #555;
+}
+.footer{
+  width: 100%;
+  background: rgb(206, 154, 10);
+  margin: auto;
+  text-align: center; 
+  padding:15px 0;
+}
+.footer-link p{
+  font-size: 20px;
+}

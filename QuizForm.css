@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    color:rgb(95, 13, 13);
+    font-family:"open-sans";
+    font-weight: bold;
+}
+body{
+  background-image:url("../Media/allpagebg4.jpg");
+}
+/*  top header banner*/
+.team-header{
+    min-height:20vh;
+    width:100%;
+    background-image: url("../Media/pageheadertop\ \(2\).jpg");
+}
+.div-header{
+    text-align: center;
+    padding: 50px;
+    font-size: 40px;
+}
+.div-header h1{
+  padding-left:160px;
+}
+.div-header h2{
+padding-top:20px;
+}
+.menu-bar{
+  font-size: 35px;
+  color:rgb(95, 13, 13);
+  text-align: left;
+  }
+  /* Form Section */
+input[type=submit]:hover {
+    background-color: #45a049;
+    
+  }
+  textarea {
+    width: 100%;
+  }
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 50px;
+
+  }
+  .column {
+    background-color:rgb(189, 207, 84);  
+    float: left;
+    width: 50%;
+    margin-top: 8px;
+    padding: 20px;
+    padding-top:40px;
+  }
+  .dragdrop-api-column{
+    background-color:rgb(189, 207, 84);  
+    float: right;
+    width: 50%;
+    margin-top: 8px;
+    padding: 20px;
+    padding-bottom:227px;
+    padding-top:40px;
+  }
+  .dragdrop-api-column p{
+    text-align: center;
+    font-size: large;
+  }
+.submit-btn,.dragSubBtn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top:15px;
+}
+  .row{
+      padding-left:10px;
+  }
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  } 
+
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+ /* Footer Section */
+
+  .footer{
+    width: 100%;
+    background: rgb(124, 135, 138);
+    margin: auto;
+    text-align: center; 
+    padding:30px 0;
+  }
+  .footer-link p{
+    font-size: 20px;
+  }

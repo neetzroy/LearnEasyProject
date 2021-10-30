@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>LearnEasy HomePage</title>
+    
+    <script src="../LearnEasy_Phase2/JQuery/jquery-3.6.0.min.js"></script>
+    <script src="../LearnEasy_Phase2/JQuery/JqueryImgSlider.js"></script>
+    <script src="../LearnEasy_Phase2/JQuery/JqueryFadeToggle.js"></script>
+
+ 
+    <link rel="stylesheet" type="text/css" href="../LearnEasy_Phase2/CSS/LE_HomePage.css"/> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+       
+<section class="header">
+
+        <nav>
+            <i class="fa fa-leanpub fa-3x" aria-hidden="true"></i>
+            <a href="../LearnEasy_Phase2/index.html" class="menu-bar"><b style="color:rgb(95, 13, 13);">LearnEasy</b></a>
+
+<!--CCS NAV MENU AND SUBMENU WITH LINKS-->       
+            <div class="nav-links" id="navLinks">
+                <ul>
+                    <div class="dropdown">
+                        <li><a href="#goto-aboutUs" class="dropbtn"><b style="color:rgb(95, 13, 13);">About Us</b></a></li>
+                            <div class="dropdown-content">
+                                <a href="#goto-aboutUs">Overview</a>
+                                <a href="#goto-testmons">Testimonials</a>
+                            </div>
+                    </div>
+                    <li><a href="../LearnEasy_Phase2/Html/LogInForm.html"><b style="color:rgb(95, 13, 13);">Log In</b></a></li>
+                    <li><a href="../LearnEasy_Phase2/Html/Team.html"><b style="color:rgb(95, 13, 13);">Our Team</b></a></li>
+                    <li><a href="../LearnEasy_Phase2/Html/Courses.html"><b style="color:rgb(95, 13, 13);">Courses</b></a></li>
+                    <li><a href="../LearnEasy_Phase2/Html/Resources.html"><b style="color:rgb(95, 13, 13);">Resources</b></a></li>
+                    <li><a href="../LearnEasy_Phase2/Html/Contact.html"><b style="color:rgb(95, 13, 13);">Contact</b></a></li>
+                </ul>
+            </div>
+
+        <i class="fa fa-bars"></i>
+        </nav>
+
+<!--BUTTON WITH TRANSITION PROPERTY-->
+        <div class="text-box">
+        <h1>LearnEasy</h1>
+        <p>Introducing a new kids friendly online learning platform...</p>
+        <a href="../LearnEasy_Phase2/Html/RegisterForm.html" class="hero-btn">Register Now</a>
+        </div>
+</section>
+ <!--1st Jquery Section WITH DYNAMIC ELEMENTS-->  
+<section class="index-about">
+<div id="slideshow">
+    <div class="slider-quote"><h1>“We grow great by dreams.” – Woodrow Wilson </h1></div>
+        <div>
+        <img src="../LearnEasy_Phase2/Media/slide1.jpg" style="width:100%; height:100%">
+        </div>
+        <div class="slider-quote"><h1>"There is no substitute for hard work." – Thomas Edison</h1></div>
+        <div>
+        <img src="..//LearnEasy_Phase2/Media/slide2.jpeg" style="width:100%; height:100%">
+    </div>
+    
+    <div class="slider-quote"><h1>"All students can learn and succeed, but not on the same day in the same way." – William Spady</h1></div>
+        <div>
+        <img src="../LearnEasy_Phase2/Media/slide3.jpeg" style="width:100%; height:100%"> 
+        </div>
+        <div class="slider-quote"><h1>“There are no secrets to success. It is the result of preparation, hard work, and learning from failure.” – Colin Powell</h1></div>
+        <div>
+        <img src="../LearnEasy_Phase2/Media/slide4.jpeg" style="width:100%; height:100%"> 
+    </div>
+</div>
+</section>
+<!--IMPLEMENTATION OF FLEX BOXES AND PROPERTIES-->
+<section class="index-about">
+
+    <h2 id="goto-aboutUs"> About Us</h2>
+    <p>Welcome to LearnEasy, your number one source for an easy kids friendly platform for their learning. We're dedicated to providing you the very best of online learning, with an emphasis on simplicity, easy access, and fast services.
+       <br> Founded in 2021, LearnEasy has come a long way from its beginnings in Perth. When its first started out, our passion for  "kids-friendly online learning" drove us to start developing the concept with a great team of Teachers and their hard work.
+        <br>We hope you enjoy our products as much as we enjoy offering them to you. If you have any questions or comments, please don't hesitate to Contact us.
+       <br> Sincerely,
+       <br><b style="color:rgb(95, 13, 13);">LearnEasy Team</b></p>
+
+
+        <div class="container">
+      <!--FLEX BOX 1-->  
+            <div class="col1">
+                <h4> <b style="color:rgb(95, 13, 13);">Basics</b></h4>
+            <p>Computer Science is one of the disciplines of modern science under which, we study about the various aspects of computer technologies, their development, and their applications in the present world. Likewise, Computer Science includes a wide range of topics such as the development of Computer Technology (hardware and software), application of Computer technology in today’s life, information technology, computer threat, computer security, etc.</p>
+            </div>
+      <!--FLEX BOX 2-->  
+            <div class="col1">
+            <h4> <b style="color:rgb(95, 13, 13);">Coding</b></h4>
+            <p>Coding is basically the computer language used to develop apps, websites, and software. Without it, we’d have none of the most popular technology we’ve come to rely on such as Facebook, our smartphones, the browser we choose to view our favorite blogs, or even the blogs themselves. It all runs on code.</p>
+            </div>
+      <!--FLEX BOX 3-->  
+            <div class="col1">
+            <h4><b style="color:rgb(95, 13, 13);"> MS Office</b></h4>
+            <p>Microsoft Office is one of the most popular, versatile, and complete office application suites in the world. It is so popular that more than 80% of companies use the services of this software.It is a set of applications with which we can carry out office tasks, being able to automate. Because, under the same name the programs, options and features that are required to achieve an outstanding level of data compatibility are combined. </p>
+            </div>
+        </div>
+</section>
+
+ <!--2ND Jquery Section WITH DYNAMIC ELEMENTS AS IMAGE FADEIN AND FADEOUT-->  
+<section class="index-about">
+    <div id="flip">
+    <h1 id="goto-testmons">Lets check out what our students say....Click Here...</h1>
+    </div>
+        <div class="row1"id="panel1">
+            <img src="../LearnEasy_Phase2/Media/testmon1.jpg" alt="testmon1" style="width:24.8%" id="img1">
+            <img src="../LearnEasy_Phase2/Media/testmon2.jpg" alt="testmon2" style="width:23%" id="img2">
+            <img src="../LearnEasy_Phase2/Media/testmon3.jpg" alt="testmon3" style="width:23%" id="img3">
+            <img src="../LearnEasy_Phase2/Media/kid1.jpg" alt="testmon3" style="width:23%" id="img4">
+            <img src="../LearnEasy_Phase2/Media/kid2.jpg" alt="testmon3" style="width:23%" id="img5">
+            <img src="../LearnEasy_Phase2/Media/kid3.jpg" alt="testmon3" style="width:23%" id="img6">
+        </div>
+   <!--3RD Jquery Section WITH PANEL TOGGLE IN & OUT-->    
+        <div class="row "id="panel1">
+            <div class="testimonial-col" id="panel1">
+                <img src="../LearnEasy_Phase2/Media/kid1.jpg" >
+                <div>
+                    <p>With the help of LearnEasy platform, I am able to learn and excel in computer science in various levels with helpful teachers and informative resources provided in the website . </p>
+                    <br><p>-Sandra Hendrick,Class 10</p>
+                    <h3>LearnEasy</h3>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                </div>
+            </div>
+        </div>
+   <!--3RD Jquery Section WITH PANEL TOGGLE IN & OUT-->   
+            <div class="testimonial-col"id="panel1">
+                    <img src="../LearnEasy_Phase2/Media/kid2.jpg">
+                <div>
+                    <p>I will definitely recommend LearnEasy for kids as it is very easy to access the learning material and online classes with our dedicated and helpful teachers.</p>
+                    <br><p>-Jake Millerson,Class 5</p>
+                    <h3>LearnEasy</h3>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                </div>
+            </div>
+
+</section>
+
+<footer>   
+<section class="footer">
+    <div class="icons">
+        <a href="https://www.facebook.com" > <i class="fa fa-facebook"></i></a>
+        <a href="https://www.twitter.com" > <i class="fa fa-twitter"></i></a>
+        <a href="https://www.instagram.com" > <i class="fa fa-instagram"></i></a>
+        <div class="footer-link"><p>Copyright@LearnEasy</p></div>
+    </div>
+</section>
+</footer>
+</body>
+</html>
+

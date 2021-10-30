@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/Contact.css"/> 
+    <script src="../JQuery/jquery-3.6.0.min.js"></script>
+    <script src="../JQuery/JqueryPanelSlide.js"></script>
+
+</head>
+<body>
+  <!--JAVASCRIPT FUNCTION CALL FOR BUTTON ONCLICK : HTML DOM EVENT PROPERTY-->
+  <script>
+    function bigImg(x) {
+      x.style.height = "50%";
+      x.style.width = "50%";
+    }
+    
+    function normalImg(x) {
+      x.style.height = "22%";
+      x.style.width = "35%";
+    }
+    </script>
+<section class="team-header">
+  <i class="fa fa-leanpub fa-3x" aria-hidden="true"></i>
+  <a href="../index.html" class="menu-bar"><b>LearnEasy</b></a>
+    <div class="div-header">
+        <h1>We love your queries and feedback...</h1>
+    </div>
+</section>
+
+<section>
+<div class="container">   
+
+  <div class="contactImgDiv">
+  <!--HTML DOM EVENT : ONMOUSE IN AND OUT : IMAGE ENLARGES & SHRINKS-->
+    <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="../Media/ContactUs.jpg" alt="Smiley" width="35%" height="22%">
+    </div>
+        <div class="form-taglines">
+  <!--4TH JQUERY SECTION WITH PANEL SLIDE UP AND DOWN-->     
+              <div>
+              <h2  id="flip">Leave us a message: Click Here...</h2> <br>
+              </div>
+              <div id="panel">
+              <p>We love questions and feedback...!!</p><br>
+              <p>We are always happy to help...!!</p><br>
+              <p>Fill the form below & Send Us</p>
+              </div>
+
+        </div>
+
+   <br>
+  <br>
+    <div class="row">
+
+      <div class="column">
+        
+        <form action="post">
+
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          <br>
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          <br>
+          <label for="email">Email Id   </label>
+          <input type="text" id="email" name="email" placeholder="Your email id.." required>
+          <br>
+          <label for="user-type">Who is using the website?</label>
+            <select id="user-type" name="user-type">
+            <option value="australia">Parent</option>
+            <option value="canada">Student</option>
+            </select>
+          <br>       
+          <p>Gender : </p>
+          <input type="radio" id="radio" name="gender" value="Male">
+          <label for="gender">Male</label><br>
+          <input type="radio" id="radio" name="gender" value="Female">
+          <label for="gender">Female</label>
+          <br><br> 
+          <label for="dob">Date of Birth</label>
+          <input type="date" id="dob" name="dobmail-list">
+          <br><br> 
+          <label for="phone">Phone Number </label>
+          <input type="text" id="phone" name="phone" placeholder="Your contact number.." required>
+          <br>
+          <label for="mail-list">Joining our mail list?</label>
+          <input type="checkbox" id="mail-list" name="mail-list">
+          <br><br>
+          <label for="message">Leave us your message here..</label> <br>
+          <textarea name="message" rows="10" required></textarea>
+          <br><br>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+
+  </div>
+</section>
+<section class="location">
+  <div class="loc-div-foot">
+<!-- iframe for google map embedded-->
+    <div class="container-map">
+            <div class="map-title">
+              <h2>Find us here...</h2>
+            </div>
+            <div class="map-div-style">
+                    <div class="mapinfo">
+                        <i class="fa fa-map-marker fa-3x" aria-hidden="true"></i> Public School, London, 3000.
+                        <br><i class="fa fa-envelope-open fa-2x" aria-hidden="true"></i> LearnEasy@gmail.com
+                        <br><i class="fa fa-phone-square fa-2x" aria-hidden="true"></i> 111 222 333 22
+                    </div>
+                <div class="mapouter">
+                    <div class="gmap_canvas">
+                        <iframe width="900" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                        </iframe><a href="https://www.embedgooglemap.net/blog/divi-discount-code-elegant-themes-coupon/"></a>
+                        <br><style>.mapouter{position:relative;text-align:right;height:300px;width:800px;}</style>
+                        <a href="https://www.embedgooglemap.net"></a>
+                        <style>.gmap_canvas {overflow:hidden;background:none!important;height:300px;width:500px;}</style>
+                    </div>
+                </div>
+            </div>
+    </div>
+  </div>
+</section>
+<footer>   
+  <section class="footer">
+      <div class="icons">
+          <a href="https://www.facebook.com" > <i class="fa fa-facebook"></i></a>
+          <a href="https://www.twitter.com" > <i class="fa fa-twitter"></i></a>
+          <a href="https://www.instagram.com" > <i class="fa fa-instagram"></i></a>
+          <div class="footer-link"><p>Copyright@LearnEasy</p></div>
+      </div>
+  </section>
+</footer>
+</body>
+
+</html>

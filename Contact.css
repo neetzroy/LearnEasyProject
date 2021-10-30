@@ -1,0 +1,162 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    color:black;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+  background-image:url("../Media/allpagebg4.jpg");
+}
+/*  top header banner*/
+.team-header{
+    min-height:20vh;
+    width:100%;
+    background-image: url("../Media/pageheadertop\ \(2\).jpg");
+}
+.menu-bar{
+  font-size: 35px;
+  color:rgb(95, 13, 13);
+  text-align: left;
+  }
+.div-header{
+    text-align: center;
+    padding: 50px;
+    font-size: 40px;
+}
+.div-header h1{
+  padding-left:160px;
+}
+.div-header h2{
+padding-top:20px;
+}
+
+/* Form Intro Lines */
+#panel, #flip {
+  padding: 5px;
+  text-align: center;
+  background-color: #e5eecc;
+  border: solid 1px #c3c3c3;
+}
+#panel {
+  padding: 50px;
+  display: none;
+}
+.form-taglines {
+  text-align:left;
+  background-color: rgb(145, 204, 42);
+  padding:30px;
+  width:100%;
+  border-radius: 20px;
+}
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+  
+}
+
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 50px;
+  padding-right:20px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  background-color:rgb(189, 207, 84);  
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+  
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+.contactImgDiv{
+  display:block;
+ padding-left:510px;
+border:none;
+
+}
+/* iframe map and address section */
+.map-title{
+  width:23.5%;
+  padding: 25px;
+  border-radius: 20px;;
+  background-color:rgb(189, 207, 84);
+  text-align:left;
+  
+}
+.mapouter{
+   float:right;
+   padding-top:50px;
+   padding-right:90px;
+  
+}
+.mapinfo{
+  float:left;
+  padding-left:40px;
+  padding-top:90px;
+
+}
+.fa, fa-map-marker, fa-2x{
+  padding-left:20px;
+  padding-bottom: 20px;
+
+}
+.container-map {
+  border-radius: 5px;
+  background-image: url("../Media/children-g779e63ff7_1920.jpg");
+  padding: 50px;
+  padding-right:20px;
+}
+.map-title{
+  background-color:  rgb(125, 185, 4);
+  }
+
+  .loc-div-foot{
+    padding-bottom: 300px;
+  }
+/* Footer Section */
+  footer{
+    width: 100%;
+    background: rgb(206, 154, 10);
+    margin: auto;
+    padding-top: 20px;
+    text-align: center; 
+  }
+ 

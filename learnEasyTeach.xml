@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--this xml document is transformed to XHTML using an external XSL-->
+<?xml-stylesheet type="text/xsl" href="../xml_docs/learnEasyTeach.xsl"?>
+
+
+<!DOCTYPE class SYSTEM "learnEasyTeach.dtd">
+
+<Teachers_Details title="Teachers Info">
+    <Teacher id="T101">
+       <firstName>John</firstName>
+       <lastName>Ward</lastName>
+       <department>Computer Science</department>
+       <teaching_subject>Basics</teaching_subject>
+       <email>john_ward@gmail.com</email>
+       <phoneNumber>1111 1111</phoneNumber>
+    </Teacher>
+
+    <Teacher id="T102">
+       <firstName>Mark</firstName>
+       <lastName>Coles</lastName>
+       <department>Computer Science</department>
+       <teaching_subject>Coding</teaching_subject>
+       <email>mark_coles@gmail.com</email>
+       <phoneNumber>1111 2222</phoneNumber>
+    </Teacher>
+
+    <Teacher id="T103">
+       <firstName>Ann</firstName>
+       <lastName>Ben</lastName>
+       <department>Computer Science</department>
+       <teaching_subject>MS Office</teaching_subject>
+       <email>ann_ben@gmail.com</email>
+       <phoneNumber>1111 3333</phoneNumber>
+    </Teacher>
+</Teachers_Details>

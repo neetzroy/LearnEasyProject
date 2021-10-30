@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+targetNamespace="http://www.learnEasy.com" xmlns="http://www.learnEasy.com " 
+elementFormDefault="qualified">
+
+<xs:element name="Teachers_Details">
+
+
+<xs:complexType>
+<xs:sequence>
+<xs:element name="firstName" type="xs:string"/>
+<xs:element name="lastName" type="xs:string"/>
+<xs:element name="department" type="xs:string"/>
+<xs:element name="teaching_subject" type="xs:string"/>
+<xs:element name="email" type="xs:string"/>
+<xs:element name="phoneNumber" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+
+</xs:element>
+</xs:schema>
